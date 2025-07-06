@@ -40,15 +40,18 @@ A compassionate AI-powered chatbot built using TinyLlama-1.1B-Chat, designed to 
 ## 🗂️ Project Structure
 
 chatbot_assessment/
-├── app.py # Streamlit frontend demo
-├── test.py # Terminal-based interaction test
-├── train.py # Fine-tuning logic
-├── deduplicate.py # Preprocessing helper
-├── all_merged_deduplicated.jsonl # Final dataset used
-├── checkpoints/ # Fine-tuned model checkpoints
-├── dataset_cleaned/ # Cleaned data during preparation
-├── huggingface_dataset... # Source datasets
-└── 
+├── app.py                        # Streamlit frontend demo
+├── test.py                       # Terminal-based interaction test
+├── train.py                      # Fine-tuning script (TinyLlama + LoRA)
+├── deduplicate.py                # Data deduplication utility
+├── all_merged_deduplicated.jsonl# Final dataset used for training
+├── checkpoints/                  # Fine-tuned model checkpoints (PEFT/LoRA)
+├── dataset_cleaned/             # Cleaned dataset variants
+├── dataset_uncleaned/           # Raw or source datasets
+├── huggingface_dataset.py/      # Optional HuggingFace dataset loader
+├── requirements.txt             # Dependencies for running locally
+└── README.md                    # Project documentation
+
 
 ## 🚀 How to Run
 
